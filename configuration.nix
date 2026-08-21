@@ -16,7 +16,10 @@
   home-manager.useUserPackages = true;
   home-manager.users.nixos = { pkgs, ... }: {
     home.stateVersion = "24.05"; 
-    home.packages = [ pkgs.htop pkgs.fastfetch ];
+    home.packages = [ pkgs.htop 
+		      pkgs.fastfetch
+		      pkgs.ripgrep
+    ];
   };
 
   system.stateVersion = "26.05";
