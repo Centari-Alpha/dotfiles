@@ -21,6 +21,12 @@
           home-manager.nixosModules.home-manager
           
           ./configuration.nix
+
+          {
+	    home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.Centari = import ./home.nix;
+          }
         ];
       };
     };
