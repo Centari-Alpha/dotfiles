@@ -22,7 +22,7 @@ in
   ];
   
   fonts.fontconfig.enable = true;
-  home.sessionVariables.EDITOR = "nvim"
+  home.sessionVariables.EDITOR = "nvim";
 
   home.file.".config/wezterm".source =
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/wezterm";
