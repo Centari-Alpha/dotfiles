@@ -37,6 +37,7 @@ in
       push = "git push";
       pull = "git pull";
       m = "git switch main";
+    };
   };
 
   home.file.".config/wezterm".source =
@@ -47,4 +48,4 @@ in
     userName = "Centari-Alpha";
     userEmail = "djbrodka@gmail.com";
   };
-};
+}
