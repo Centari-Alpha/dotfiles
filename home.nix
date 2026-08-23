@@ -25,7 +25,7 @@ in
   home.sessionVariables.EDITOR = "nvim";
 
   programs.zsh = {
-    enable = true
+    enable = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     initContent = ''
