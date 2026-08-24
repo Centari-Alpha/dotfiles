@@ -40,5 +40,7 @@ config.font = wezterm.font("Hack Nerd Font")
 config.font_size = 15.0
 config.window_background_opacity = 0.8
 config.win32_system_backdrop = 'Acrylic'
+config.hid_tab_bar_if_only_one_tab = true
+config.window_decorations = "RESIZE"
 
 return config
