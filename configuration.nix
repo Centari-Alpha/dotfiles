@@ -8,6 +8,10 @@
   wsl.enable = true;
   wsl.defaultUser = "Centari";
 
+  programs.zsh.enable = true;
+
+  shell = pkgs.zsh;
+
   users.users.Centari = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; 
