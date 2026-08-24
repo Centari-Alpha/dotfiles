@@ -38,5 +38,7 @@ config.colors = {
 
 config.font = wezterm.font("Hack Nerd Font")
 config.font_size = 15.0
+config.window_background_opacity = 0.8
+config.windo_background_blur = 50
 
 return config
