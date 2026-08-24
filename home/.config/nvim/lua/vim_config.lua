@@ -6,6 +6,6 @@ o.number = true
 o.relativenumber = true
 o.ignorecase = true
 o.smartcase = true
-o.clipboard = 'unamedplus'
+o.clipboard = 'unnamedplus'
 o.scrolloff = 16
 o.undofile = true
