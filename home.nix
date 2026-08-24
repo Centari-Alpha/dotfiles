@@ -19,6 +19,14 @@ in
     lazygit
     neovim
     nerd-fonts.hack
+    gcc
+    gnumake
+    unzip
+    wget
+    curl
+    tree-sitter
+    nodejs
+    luarocks
   ];
   
   fonts.fontconfig.enable = true;
