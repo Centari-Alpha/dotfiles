@@ -36,4 +36,7 @@ config.colors = {
   }
 }
 
+config.font = wezterm.font("Hack Nerd Font")
+config.font_size = 15.0
+
 return config
