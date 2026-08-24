@@ -14,7 +14,7 @@
     isNormalUser = true;
     extraGroups = [ "wheel" ];
     shell = pkgs.zsh; 
-  }; 
+  };
 
   environment.systemPackages = with pkgs; [
     git vim wget
