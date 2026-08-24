@@ -10,11 +10,10 @@
 
   programs.zsh.enable = true;
 
-  shell = pkgs.zsh;
-
   users.users.Centari = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; 
+    extraGroups = [ "wheel" ];
+    shell = pkgs.zsh; 
   }; 
 
   environment.systemPackages = with pkgs; [
