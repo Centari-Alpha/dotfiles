@@ -38,6 +38,7 @@ in
     syntaxHighlighting.enable = true;
     initContent = ''
       bindkey '^f' autosuggest-accept
+      export PATH="/mnt/c/dev/hex-mecari/tools/bin:$HOME/.local/share/npm/bin:$PATH"
     '';
     shellAliases = {
       ".." = "cd ..";
@@ -45,6 +46,7 @@ in
       push = "git push";
       pull = "git pull";
       m = "git switch main";
+      hm = "cd /mnt/c/dev/hex-mecari && nix develop";
     };
   };
 
