@@ -1,7 +1,16 @@
--- NixOS-native LSP & Treesitter configuration for Hex Mecari (Rust + C# + Protobuf + Markdown)
--- On NixOS, Mason's precompiled dynamically linked binaries fail; setting mason = false tells
--- nvim-lspconfig to use the native rust-analyzer provided by 'nix develop' (flake.nix).
+-- NixOS-native LSP, Treesitter & Completion configuration for Hex Mecari
 return {
+  {
+    "saghen/blink.cmp",
+    opts = {
+      keymap = {
+        preset = "super-tab",
+        ["<Tab>"] = { "select_and_accept", "snippet_forward", "fallback" },
+        ["<S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
+        ["<CR>"] = { "fallback" },
+      },
+    },
+  },
   {
     "neovim/nvim-lspconfig",
     opts = {
