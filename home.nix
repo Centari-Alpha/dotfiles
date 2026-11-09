@@ -39,6 +39,9 @@ in
     initContent = ''
       bindkey '^f' autosuggest-accept
       export PATH="/mnt/c/dev/hex-mecari/tools/bin:$HOME/.local/share/npm/bin:$PATH"
+      eval "$(dircolors -b 2>/dev/null || true)"
+      export LS_COLORS="${LS_COLORS}:ow=01;37;42:tw=01;37;42"
+      zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
     '';
     shellAliases = {
       ".." = "cd ..";
